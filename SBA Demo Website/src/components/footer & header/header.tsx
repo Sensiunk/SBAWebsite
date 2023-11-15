@@ -11,9 +11,9 @@ function Header() {
   // const menuClass = `dropdown-menu${open ? " show" : ""}`;
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-secondary">
+    <Navbar collapseOnSelect expand="lg" className="bg-warning">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             alt=""
             src={logo}
@@ -26,23 +26,20 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#DataStructures">Data Structures</Nav.Link>
-            <Nav.Link href="#CompetitiveProgramming">
-              Competitive Programming
-            </Nav.Link>
-            <NavDropdown title="Courses" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">backend</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">frontend</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">DSA</NavDropdown.Item>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/events">Events</Nav.Link>
+            <NavDropdown title="About Us" id="collapsible-nav-dropdown">
+              <NavDropdown.Item href="/aboutus">About Us Pt.1</NavDropdown.Item>
+              <NavDropdown.Item href="/aboutus">About Us Pt.2</NavDropdown.Item>
+              <NavDropdown.Item href="/aboutus">About Us Pt.3</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">cp</NavDropdown.Item>
+              <NavDropdown.Item href="/aboutus">
+                About Us Pt.4.1
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="/contactus">Contact Us</Nav.Link>
-            <Nav.Link eventKey={2} href="/community">
-              Community
-            </Nav.Link>
+            <Nav.Link href="/Contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
